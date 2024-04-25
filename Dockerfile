@@ -1,4 +1,3 @@
-FROM pypiserver/pypiserver:v1.5.2
+FROM pypiserver/pypiserver:v2.0.0
 # No password (-P .), no authentication (-a .)
-# Use sha256 instead of md5: https://stackoverflow.com/a/73620697/735926
-CMD ["-P", ".", "-a", ".", "--hash-algo", "sha256", "/data/packages"]
+CMD ["-P", ".", "-a", ".", "/data/packages"]
