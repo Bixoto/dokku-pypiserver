@@ -24,6 +24,10 @@ dokku ports:set pypiserver http:80:8080
 
 Then clone this repository, and push to your Dokku remote to deploy it.
 
+### Upgrade
+
+To upgrade, bump the version in the `Dockerfile` and push.
+
 ## Cookbook
 
 In the example snippets below we assume you set the dokku app domain to `pypi.example.com`. Replace this with your own
